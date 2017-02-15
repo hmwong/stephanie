@@ -1,0 +1,14 @@
+*.classpath
+*.DS_Store
+*.settings
+*.project
+*.settings
+*.idea
+*.iml
+testResults*
+
+/**/test-output
+/**/target
+/**/bin
+/**/.metadata
+/**/weedmaps-ios-develop

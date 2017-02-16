@@ -10,11 +10,7 @@ public class FlightsTest extends Driver {
 	@Test
 	public void flightsTest() {
 		driver.get("https://www.google.com/flights/");
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+	
 		Flights flights = new Flights(driver);
 		Assert.assertEquals(flights.flightsHeader.getText(), "Flights");
 	}

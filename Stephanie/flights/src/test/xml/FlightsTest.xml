@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Flights Page Test" thread-count="8" parallel="tests">
+	<test name = "CRHOME">
+	    <classes>
+	        <class name = "flights.test.FlightsTest" />
+	    </classes>
+	</test>
+</suite>

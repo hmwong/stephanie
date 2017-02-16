@@ -12,10 +12,19 @@ public class FlightsTest extends Driver {
 		driver.get("https://www.google.com/flights/");
 		try {
 			Thread.sleep(2000);
+			
+			Flights flights = new Flights(driver);
+			Assert.assertEquals(flights.flightsHeader.getText(), "Flights");
+			
+			Thread.sleep(2000);
+			
+			flights.clickOneWay();
+			
+			Thread.sleep(5000);
+			
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		Flights flights = new Flights(driver);
-		Assert.assertEquals(flights.flightsHeader.getText(), "Flights");
+		
 	}
 }
